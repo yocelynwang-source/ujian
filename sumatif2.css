@@ -1,0 +1,176 @@
+body{
+	font-family:arial, sans-serif;
+	margin: 2px;
+	background-color:white;
+}
+
+.container{
+	max-width:400px;
+	background-color:CEECF5;
+	padding:20px;
+	border-radius:8px;
+	box-shadow:0 0 10px rgba(0,0,0.1);
+	margin:auto;
+	text-align:center;
+}
+
+h1{
+	font-size:18px;
+	margin:0 0 12px 0;
+	text-align:center;
+}
+h2{
+	font-size:8px;
+	margin:0 0 12px 0;
+	text-align:center;
+}
+
+h3{
+	font-size:8px;
+	margin:0 0 12px 0;
+	text-align:center;
+}
+
+h4{
+	font-size:8px;
+	margin:0 0 12px 0;
+	text-align:center;
+}
+
+h5{
+	font-size:8px;
+	margin:0 0 12px 0;
+	text-align:center;
+}
+
+label{
+	display:block;
+	font-size: 15px;
+	text-align: left;
+	margin-bottom: 8px;
+}
+
+.container-radio{
+	display: block;
+	position: relative;
+	padding-left: 25px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	font-size: 15px;
+	text-align: left;
+}
+
+.container-checkbox{
+	display: block;
+	position: relative;
+	padding-left: 25px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	font-size: 15px;
+	text-align: left;
+}
+
+.container-radio input, .container-checkbox input{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.checkmark{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	background-color: #eee;
+}
+
+.container-radio .checkmark{
+	border-radius: 50%;
+}
+
+.container-checkbox .checkmark{
+	border-radius: 4px;
+}
+
+.container-radio:hover input ~ .checkmark, .container-checkbox:hover input ~ .checkmark{
+	background-color: #ccc;
+}
+
+.container-radio input:checked ~ .checkmark{
+	background-color: #2196F3;
+}
+
+.container-checkbox input:checked ~ .checkmark{
+	background-color: #2196F3;
+}
+
+.checkmark:after{
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.container-radio input:checked ~ .checkmark:after{
+	display: block;
+}
+
+.container-checkbox input:checked ~ .checkmark:after{
+	display: block;
+}
+
+.container-radio .checkmark:after{
+	top: 5px;
+	left: 5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.container-checkbox .checkmark:after{
+	top: 5px;
+	left: 5px;
+	width: 8px;
+	height: 8px;
+	background: white;
+}
+
+.button-group{
+	display: flex;
+	gap: 10px;
+	margin: 20px 0;
+}
+
+button{
+	flex: 1;
+	padding: 10px;
+	background-color: #2196F3;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+button:hover{
+	background-color: #0b7dda;
+}
+
+#clearBtn{
+	background-color: #f44336;
+}
+
+#clearBtn:hover{
+	background-color: #da190b;
+}
+
+.result{
+	background-color: white;
+	padding: 15px;
+	border-radius: 4px;
+	margin-top: 15px;
+	text-align: left;
+	min-height: 80px;
+	white-space: pre-line;
+}

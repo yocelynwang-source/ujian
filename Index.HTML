@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>Formulir Pendaftaran Siswa</title>
+	<link rel="stylesheet" type="text/css" href="sumatif2.css">
+</head>
+<body>
+	<div class="container" role="region" aria-labelledby="title">
+		<h1 id="title"> Formulir Pendaftaran Siswa </h1>
+		<h2 id="title"> Isi Data Dengan Lengkap Dan Benar</h2>
+		
+		<label for="name">Name* </label>
+		<input id="name" name="name" type="text" placeholder="Contoh:Muhammad Raihan" required>
+		<h3 id="title"> Nama sesuai identitas</h3>
+		
+		<label for="class">Class*</label>
+		<input id="class" name="class" type="text" placeholder="Contoh:XII IPA 2/11 A/7 B" required>
+		<h4 id="title"> Kelas saat ini/tujuan</h4>
+		
+		<h1>Pilih Ekstrakulikuler (3 Pilihan)</h1>
+		<label class="container-checkbox"> Basket
+			<input type="checkbox" name="Pilih Ekstrakulikuler" value="Basket">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container-checkbox"> Futsal
+			<input type="checkbox" name="Pilih Ekstrakulikuler" value="Futsal">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container-checkbox"> Paduan Suara
+			<input type="checkbox" name="Pilih Ekstrakulikuler" value="Paduan Suara">
+			<span class="checkmark"></span>
+		</label>
+		<h4 id="title">boleh memilih dari satu(opsional)</h4>
+		
+		<h1>Pilih Jadwal Belajar(wajib pilih salah satu)</h1>
+		<label class="container-radio">Pagi(07.00-12.00)
+			<input type="radio" name="Pilih Jadwal Belajar(wajib pilih salah satu)" value="Pagi(07.00-12.00)">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container-radio">Siang(12.30-17.00) 
+			<input type="radio" name="Pilih Jadwal Belajar(wajib pilih salah satu)" value="Siang(12.30-17.00)">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container-radio">Sore(17.30-20.30)
+			<input type="radio" name="Pilih Jadwal Belajar(wajib pilih salah satu)" value="Sore(17.30-20.30)">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container-radio">Campuran(fleksibel)
+			<input type="radio" name="Pilih Jadwal Belajar(wajib pilih salah satu)" value="Campuran(fleksibel)">
+			<span class="checkmark"></span>
+		</label>
+		<h5 id="title">satu pilihan wajib dipilih untuk kelengkapan data</h5>
+		<div class="button-group">
+			<button id="okBtn">Daftar Sekarang</button>
+			<button id="clearBtn">Reset Form</button>
+		</div>
+		
+		<div class="result" id="hasil">
+			Data akan ditampilkan disini
+		</div>
+	</div>
+	
+	<script src="sumatif.JS"></script>
+</body>
+</html>
